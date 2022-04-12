@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(ELSED)
 
-find_package(OpenCV REQUIRED)
+set(CMAKE_BUILD_TYPE "Release")
+
+find_package(OpenCV 3 REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 file(GLOB_RECURSE LIB_SOURCES "src/*.cpp" "src/*.h")

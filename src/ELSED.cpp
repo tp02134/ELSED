@@ -315,7 +315,7 @@ void ELSED::drawAnchorPoints(const uint8_t *dirImg,
             continue;
           }
 
-#ifdef UPM_SD_USE_REPROJECTION
+#ifdef false
           // Re-project the point into the segment. To do this, we should move pixel.dot(l)
           // units (the distance between the pixel and the segment) in the direction
           // perpendicular to the segment (perpDir).
